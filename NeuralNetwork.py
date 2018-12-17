@@ -47,11 +47,9 @@ class NeuralNetwork:
 
 		
 		self.db2 = np.mean(output_diff, axis=0)
-		# print self.dw2
 		self.W1 += lr * (self.dw1.T + rho*self.dw1.T)
 		self.W2 += lr * (self.dw2 + rho*self.dw2)
-		# self.b1 -= lr * self.db1
-		# self.b2 -= lr * self.db2
+
 
 		errors = [0]*len(pixels)
 		for k in range(len(pixels)):
