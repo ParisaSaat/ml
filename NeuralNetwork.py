@@ -13,19 +13,6 @@ def sigmoid(x):
 def sigmoidDrivation(x):
 	return x*(1-x)
 
-#Linear(with fake name :D to reduce changes.)
-# def sigmoid(x):
-# 	return x
-
-# def sigmoidDrivation(x):
-# 	return np.ones((np.shape(x)[0], np.shape(x)[1]))
-
-#tanh(with fake name :D to reduce changes.)
-# def sigmoid(x):
-# 	return np.tanh(x)
-
-# def sigmoidDrivation(x):
-# 	return 1 - np.tanh(x)**2
 
 class NeuralNetwork:
 	def __init__(self):
